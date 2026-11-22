@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#100e11">
+  <meta name="description" content="Dein Wintertraining mit Kraftzirkel, Calisthenics-Skills und Oh Hill No.">
+  <title>Winter Arc</title>
+  <link rel="icon" href="./assets/icon-192.png?v=5">
+  <link rel="apple-touch-icon" href="./assets/icon-192.png?v=5">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./plan.js"></script>
+  <script defer src="./stats.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body data-view="training">
+  <header class="header">
+    <div class="wrap header-inner">
+      <button type="button" class="brand" data-view="training" aria-label="Winter Arc Training">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <span>Winter <strong>Arc</strong></span>
+      </button>
+      <nav id="navigation" class="nav" aria-label="Hauptnavigation"></nav>
+      <time id="date" class="date"></time>
+    </div>
+  </header>
+  <main id="app" class="wrap" tabindex="-1"></main>
+  <aside id="active-timer" class="active-timer" aria-label="Aktiver Timer" hidden></aside>
+  <div id="notice" role="status" class="notice" hidden></div>
+  <noscript><p class="wrap">Aktiviere JavaScript, um den Trainingsplan und die Timer zu verwenden.</p></noscript>
+</body>
+</html>
